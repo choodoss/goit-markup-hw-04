@@ -122,12 +122,18 @@ header {
 }
 
 .email {
+  display: block;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
 .phone {
+  display: block;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -190,6 +196,21 @@ header {
 
 .features__body {
   flex-basis: calc((100% - 3 * var(--primary-gap)) / 4);
+}
+
+.features__bgc-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F4FA;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.features__body-img {
+  width: 70px;
+  height: 70px;
+  fill: #188CE8;
 }
 
 .visually-hidden {
@@ -258,7 +279,7 @@ header {
 }
 
 .team-text {
-  padding: 30px 0;
+  padding: 30px 32px;
 }
 
 .name-title {
@@ -275,6 +296,49 @@ header {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.social-item__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  color: #AFB1B8;
+  border-radius: 50%;
+}
+
+.brands-list {
+  display: flex;
+  gap: var(--primary-gap);
+}
+
+.brands-item {
+  flex-basis: calc(100% - 5 * var(--primary-gap) / 6);
+}
+
+.brands-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  color: #AFB1B8;
+  height: 92px;
+}
+
+.brands-link:hover,
+.brands-link:focus,
+.brends__logo:hover,
+.brends__logo:focus {
+  color: var(--primary-color-hover);
+  border-color: var(--primary-color-hover);
 }
 
 .footer {
@@ -282,9 +346,13 @@ header {
   padding: 60px 0;
 }
 
-.container > .my-logo {
+.footer .my-logo {
   margin-right: 0;
   margin-bottom: 20px;
+}
+
+.footer__row {
+  display: flex;
 }
 
 .logo-white {
@@ -312,6 +380,10 @@ header {
   color: #FFFFFF;
 }
 
+.phone-icon:hover,
+.phone-icon:focus,
+.email-icon:hover,
+.email-icon:focus,
 .map:focus,
 .map:hover,
 .email:focus,
@@ -319,6 +391,58 @@ header {
 .email:hover,
 .phone:hover {
   color: var(--primary-color-hover);
+}
+
+.address__column {
+  margin-right: 70px;
+}
+
+.social__column {
+  margin-top: 12px;
+}
+
+.social__column-text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.social__column .social-item__link {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-item__link:hover,
+.social-item__link:focus {
+  background-color: var(--primary-color-hover);
+  color: #FFFFFF;
+}
+
+.social-icon {
+  height: 20px;
+  width: 20px;
+  fill: currentColor;
+}
+
+.phone-icon,
+.email-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.brends__logo {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.phone-icon {
+  width: 10px;
+  height: 16px;
 }
 
 .navigation {
