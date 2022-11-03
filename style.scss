@@ -147,9 +147,14 @@ header {
 
 .hi-banner {
     padding: 200px 0;
+    margin: 0 auto;
+    max-width: 1400px;
 
     background-color: #2F303A;
-    background-image: url(../img/hi-banner__bg.jpg);
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../img/hi-banner__bg.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -333,6 +338,7 @@ header {
     flex-basis: calc(100% - (5*var(--primary-gap)) / 6);
 
 }
+
 .brands-link {
     display: flex;
     justify-content: center;
@@ -347,8 +353,8 @@ header {
 .brands-link:focus,
 .brends__logo:hover,
 .brends__logo:focus {
-color: var(--primary-color-hover);
-border-color: var(--primary-color-hover);
+    color: var(--primary-color-hover);
+    border-color: var(--primary-color-hover);
 }
 
 
@@ -507,11 +513,10 @@ border-color: var(--primary-color-hover);
     flex: 1 1 calc((100% / 2*var(--primary-gap)) / 3);
 }
 
-// .example-item:hover,
-// .example-item:focus {
-//     border: 1px solid #EEEEEE;
-//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-// }
+.example-item:hover,
+.example-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .example-item__body {
     padding: 20px 24px;
