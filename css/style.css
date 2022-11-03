@@ -336,9 +336,7 @@ header {
 }
 
 .brands-link:hover,
-.brands-link:focus,
-.brends__logo:hover,
-.brends__logo:focus {
+.brands-link:focus {
   color: var(--primary-color-hover);
   border-color: var(--primary-color-hover);
 }
@@ -382,10 +380,6 @@ header {
   color: #FFFFFF;
 }
 
-.phone-icon:hover,
-.phone-icon:focus,
-.email-icon:hover,
-.email-icon:focus,
 .map:focus,
 .map:hover,
 .email:focus,
