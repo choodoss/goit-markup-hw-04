@@ -146,7 +146,7 @@ header {
 .hi-banner {
   padding: 200px 0;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1600px;
   background-color: #2F303A;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hi-banner__bg.jpg);
   background-position: 50%;
@@ -207,12 +207,6 @@ header {
   background-color: #F5F4FA;
   height: 120px;
   margin-bottom: 30px;
-}
-
-.features__body-img {
-  width: 70px;
-  height: 70px;
-  fill: #188CE8;
 }
 
 .visually-hidden {
@@ -353,6 +347,7 @@ header {
 
 .footer__row {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-white {
@@ -393,10 +388,6 @@ header {
   margin-right: 70px;
 }
 
-.social__column {
-  margin-top: 12px;
-}
-
 .social__column-text {
   margin-bottom: 20px;
   font-weight: 700;
@@ -417,15 +408,11 @@ header {
 }
 
 .social-icon {
-  height: 20px;
-  width: 20px;
   fill: currentColor;
 }
 
 .phone-icon,
 .email-icon {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -434,11 +421,6 @@ header {
   width: 106px;
   height: 60px;
   fill: currentColor;
-}
-
-.phone-icon {
-  width: 10px;
-  height: 16px;
 }
 
 .navigation {
@@ -453,7 +435,6 @@ header {
 
 .button {
   padding: 6px 22px;
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -482,11 +463,6 @@ header {
   flex: 1 1 calc(50% * var(--primary-gap) / 3);
 }
 
-.example-item:hover,
-.example-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .example-item__body {
   padding: 20px 24px;
   background-color: #FFFFFF;
@@ -511,4 +487,13 @@ header {
 .example-item__description {
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+
+.example-item__link {
+  display: block;
+}
+
+.example-item__link:hover,
+.example-item__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
