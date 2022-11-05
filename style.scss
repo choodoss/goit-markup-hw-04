@@ -193,10 +193,6 @@ header {
     background: #188CE8;
 }
 
-.features {
-    padding-bottom: 0;
-}
-
 .features__row {
     display: flex;
     justify-content: center;
@@ -244,7 +240,9 @@ header {
     line-height: 1.71;
 }
 
-.work-img__title {}
+.work-img {
+    padding-top: 0;
+}
 
 .title {
     margin-bottom: 50px;
